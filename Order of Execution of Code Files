@@ -1,0 +1,20 @@
+voc_to_yolo_converter.py
+➤ Converts PascalVOC annotations to YOLO format.
+
+person_model_train.ipynb
+➤ Trains the YOLOv8 model to detect persons.
+
+crop_person_images.ipynb (Optional)
+➤ Crops detected persons from training images for PPE detection dataset.
+
+ppe_model_train.ipynb
+➤ Trains the YOLOv8 model to detect PPE items on person images.
+
+person_model_to_onnx.py
+➤ Converts the trained person detection model to ONNX format.
+
+ppe_model_to_onnx.py
+➤ Converts the trained PPE detection model to ONNX format.
+
+final_inference.py
+➤ Performs two-stage inference: detects persons first, then detects PPE on them.
